@@ -12,6 +12,7 @@ class Todo(db.Model):
     completed = db.Column(db.Integer, default = 0)
     date_created = db.Column(db.DateTime, default=datetime.utcnow )
 
+    ## string representation of the class' object
     def __repr__(self):
         return '<Task %r>' % self.id
 
